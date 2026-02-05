@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dxpeq4d5hrtur"]
+[gd_scene load_steps=6 format=3 uid="uid://dxpeq4d5hrtur"]
 
 [ext_resource type="Texture2D" uid="uid://d3jkjkhhxbocx" path="res://assets/items.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://dsx1sf52vbgpf" path="res://scenes/player.gd" id="1_g2els"]
+[ext_resource type="PackedScene" uid="uid://bei5574xgjls4" path="res://scenes/screen_camera.tscn" id="3_qhqgy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g2els"]
 atlas = ExtResource("1_3vyb7")
@@ -20,4 +21,4 @@ texture = SubResource("AtlasTexture_g2els")
 [node name="Collider" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_qhqgy")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="ScreenCamera" parent="." instance=ExtResource("3_qhqgy")]

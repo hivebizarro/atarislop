@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=4 uid="uid://dfolpvjbbjqv"]
+[gd_scene load_steps=6 format=4 uid="uid://dfolpvjbbjqv"]
 
 [ext_resource type="Texture2D" uid="uid://8brms70plgsu" path="res://assets/adventure_tiles.png" id="1_8ydyi"]
 [ext_resource type="PackedScene" uid="uid://dxpeq4d5hrtur" path="res://scenes/player.tscn" id="2_ovq2m"]
+[ext_resource type="PackedScene" uid="uid://bl3dgk3lp7vd2" path="res://scenes/camera_zone.tscn" id="3_cujcs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wlgsh"]
 texture = ExtResource("1_8ydyi")
@@ -52,3 +53,46 @@ tile_set = SubResource("TileSet_tsrui")
 
 [node name="Player" parent="." instance=ExtResource("2_ovq2m")]
 position = Vector2(322, 322)
+
+[node name="CameraZones" type="Node2D" parent="."]
+
+[node name="GoldCastle" parent="CameraZones" instance=ExtResource("3_cujcs")]
+
+[node name="GoldCastleRoom1" parent="CameraZones" instance=ExtResource("3_cujcs")]
+position = Vector2(0, -384)
+
+[node name="GreenHall1" parent="CameraZones" instance=ExtResource("3_cujcs")]
+position = Vector2(-640, 384)
+
+[node name="GreenHall2" parent="CameraZones" instance=ExtResource("3_cujcs")]
+position = Vector2(0, 384)
+
+[node name="GreenHall3" parent="CameraZones" instance=ExtResource("3_cujcs")]
+position = Vector2(640, 384)
+
+[node name="BottomRoom" parent="CameraZones" instance=ExtResource("3_cujcs")]
+position = Vector2(640, 768)
+
+[node name="BlueMaze1" parent="CameraZones" instance=ExtResource("3_cujcs")]
+position = Vector2(-1280, 0)
+
+[node name="BlueMaze2" parent="CameraZones" instance=ExtResource("3_cujcs")]
+position = Vector2(-1280, -384)
+
+[node name="BlueMaze3" parent="CameraZones" instance=ExtResource("3_cujcs")]
+position = Vector2(-1920, -384)
+
+[node name="BlueMaze4" parent="CameraZones" instance=ExtResource("3_cujcs")]
+position = Vector2(-1920, 0)
+
+[node name="BlueMaze5" parent="CameraZones" instance=ExtResource("3_cujcs")]
+position = Vector2(-1920, 384)
+
+[node name="BlackCastle" parent="CameraZones" instance=ExtResource("3_cujcs")]
+position = Vector2(-1920, -768)
+
+[node name="BlackCastleRoom1" parent="CameraZones" instance=ExtResource("3_cujcs")]
+position = Vector2(-1920, -1152)
+
+[node name="BlackCastleRoom2" parent="CameraZones" instance=ExtResource("3_cujcs")]
+position = Vector2(-1920, -1536)
