@@ -96,3 +96,9 @@ position = Vector2(-1920, -1152)
 
 [node name="BlackCastleRoom2" parent="CameraZones" instance=ExtResource("3_cujcs")]
 position = Vector2(-1920, -1536)
+
+[node name="WarpZones_BMaze" type="Node2D" parent="."]
+
+[node name="WarpZones_Castles" type="Node2D" parent="."]
+
+[node name="WarpZones_General" type="Node2D" parent="."]

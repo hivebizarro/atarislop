@@ -1,5 +1,3 @@
+res://warp_zone.tscn
+res://warp_zone.gd
 res://world_01.tscn
-res://scenes/screen_camera.gd
-res://scenes/player.tscn
-res://scenes/camera_zone.tscn
-res://scenes/screen_camera.tscn
